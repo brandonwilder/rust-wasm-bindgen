@@ -1,1 +1,1 @@
-# Wism-Binding #
+# Wasm-Binding-Rust #
