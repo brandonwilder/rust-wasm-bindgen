@@ -192,7 +192,7 @@ jobs:
         with:
           targets: wasm32-unknown-emscripten
       - name: Setup Emscripten SDK
-        uses: mymindstorm/setup-emsdk@v15
+        uses: mymindstorm/setup-emsdk@v16
         with:
           version: latest
       - uses: actions/setup-node@v6
@@ -331,7 +331,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v6
-    - uses: dtolnay/rust-toolchain@1.88
+    - uses: dtolnay/rust-toolchain@1.100
     - run: cargo test -p wasm-bindgen-macro
     - run: cargo test -p wasm-bindgen-test-macro
 
@@ -603,7 +603,7 @@ jobs:
         working-directory: crates/msrv/cli
     steps:
     - uses: actions/checkout@v6
-    - uses: dtolnay/rust-toolchain@1.82
+    - uses: dtolnay/rust-toolchain@1.100
     - run: cargo build
 
 
